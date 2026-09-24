@@ -8,12 +8,37 @@
 </head>
 <body>
     <div class="container">
-        <div>
-            <p></p>
+        <div class="topestbox">
+            <h1>Adományozz egy rossz ügy érdekében</h1>
         </div>
-        <div>
-
+        <div class="topbox">
+            <!-- Updated id to 'amount' to better represent donation amount -->
+            <input type="number" id="amount" name="amount"><br>
+        </div>
+        <div class="lowerbox">
+            <p>4294967296</p>
+        </div>
+        <div class="lowerbox">
+            <p>1099511627776</p>
+        </div>
+        <div class="lowerbox">
+            <p>35184372088832</p>
+        </div>
+        <div class="lowestbox">
+            <a href="./fail.html"><input type="button" value="Utalás"></a>
         </div>
     </div>
+
+    <script> //AI
+        const amountInput = document.getElementById('amount');
+        const numberBoxes = document.querySelectorAll('.lowerbox');
+
+        numberBoxes.forEach(box => {
+            box.addEventListener('click', () => {
+                const value = box.querySelector('p').innerText;
+                amountInput.value = value;
+            });
+        });
+    </script>
 </body>
 </html>
