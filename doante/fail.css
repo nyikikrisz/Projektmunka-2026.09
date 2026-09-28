@@ -8,6 +8,7 @@ body {
     background-color: #000000;
     margin: 0;
     display: flex;
+    position: relative;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -19,28 +20,27 @@ body {
     isolation: isolate;
     border: 1px solid white;
     display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px; 
     justify-content: center;
     align-items: center;
     padding: 20px 40px;
-    width: auto;
+    width: 85vw;
+    max-width: 600px;
     color: white;
     font-size: 2rem;
-    grid-template-columns: repeat(3, 1fr);
 }
 
-.title {
+
+.container > * {
     grid-column: 1 / -1;
-}
-
-.subtitle {
-    grid-column: 2 / -1;
+    text-align: center;
 }
 
 @keyframes scanlines {
     from {
         background-position: 0 0;
     }
-
     to {
         background-position: 0 -8px;
     }
