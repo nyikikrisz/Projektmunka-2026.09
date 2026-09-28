@@ -18,13 +18,22 @@ body {
     position: relative;
     isolation: isolate;
     border: 1px solid white;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     padding: 20px 40px;
     width: auto;
     color: white;
     font-size: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.title {
+    grid-column: 1 / -1;
+}
+
+.subtitle {
+    grid-column: 2 / -1;
 }
 
 @keyframes scanlines {

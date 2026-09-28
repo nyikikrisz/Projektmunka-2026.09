@@ -62,6 +62,7 @@ header {
     border: 1px solid #00ff00;
     margin: 30px auto;
     padding: 3px 3px 3px 30px;
+    box-shadow: 0px 0px 30px #00ff00;
 }
 
 strong {
