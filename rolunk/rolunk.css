@@ -33,12 +33,6 @@ header {
 }
 
 
-
-
-
-
-
-
 .logo img{
     width: 50px;
     height: auto;
@@ -130,4 +124,9 @@ body::before {
     border: 3px solid rgb(255, 0, 0);
 
 
+}
+
+.kepek{
+    width: 95%;
+    border: 3px solid rgb(0, 255, 221);
 }
