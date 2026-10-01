@@ -63,6 +63,23 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.input-wrapper {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.unit {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    font-family: inherit;
+    pointer-events: none;
+}
+
 input[type="button"]{
     cursor: pointer;
 }
