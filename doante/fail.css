@@ -1,12 +1,10 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+body {
+    font-weight: bold;
 }
+
 
 body {
     background-color: #000000;
-    margin: 0;
     display: flex;
     position: relative;
     height: 100vh;
@@ -20,15 +18,15 @@ body {
     isolation: isolate;
     border: 1px solid white;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 15px; 
+    grid-template-columns: repeat(1, 1fr); 
     justify-content: center;
     align-items: center;
     padding: 20px 40px;
     width: 85vw;
     max-width: 600px;
     color: white;
-    font-size: 2rem;
+    font-size: 32px;
+    gap: 5px;
 }
 
 
@@ -44,6 +42,33 @@ body {
     to {
         background-position: 0 -8px;
     }
+}
+
+@media print {
+    body::before {
+        display: none !important;
+    }
+    button, .button {
+        display: none !important;
+    }
+}
+
+.button {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;0px;
 }
 
 body::before {
