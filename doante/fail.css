@@ -68,7 +68,7 @@ body {
 .link {
     color: white;
     text-decoration: none;
-    cursor: pointer;0px;
+    cursor: pointer;
 }
 
 body::before {
