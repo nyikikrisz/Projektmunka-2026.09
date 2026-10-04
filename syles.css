@@ -8,6 +8,11 @@
     pointer-events: none;
 }
 
+::selection {
+    color: magenta;
+    background-color: white;
+}
+
 html {
     background: black;
     height: 100%;

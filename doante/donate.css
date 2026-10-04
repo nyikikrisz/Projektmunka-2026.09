@@ -11,6 +11,11 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+::selection {
+    color: black;
+    background-color: white;
+}
+
 .container {
     position: relative;
     isolation: isolate;
